@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Roboto&display=swap");
+/* ########################## HTML Styling ############################### */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ########################## HTML Styling ############################### */
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.7;
 }
 a {
@@ -21,22 +20,10 @@ ul,
 li {
   list-style: none;
 }
-p,
-li {
-  font-size: 1.6rem;
-  margin-bottom: 0.5em;
-  letter-spacing: 0.15em;
-}
-h1,
-h2,
-h3 {
-  font-weight: 500;
-  letter-spacing: 0.35rem;
-}
+
 /* ################################ Utility Class ######################################## */
 .container {
-  max-width: 90rem;
-  width: 90%;
+  max-width: 95rem;
   margin: 0 auto;
 }
 .lg-heading {
@@ -62,6 +49,7 @@ h3 {
 }
 .bg-dark {
   background-color: #263238;
+  background-color: #101d28;
 }
 .btn:link,
 .btn:visited {
@@ -127,6 +115,18 @@ h3 {
 
 .navigation {
   padding: 2rem;
+  position: relative;
+}
+.navigation::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 .navigation::after {
   content: "";
@@ -136,9 +136,18 @@ h3 {
 .navigation .logo {
   float: left;
   text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+}
+.navigation .logo a:link,
+a:visited {
+  font-size: 2rem;
+  display: inline-block;
 }
 .navigation ul {
   float: right;
+  position: relative;
+  z-index: 4;
 }
 .navigation ul li {
   display: inline-block;
@@ -149,29 +158,33 @@ h3 {
   text-decoration: none;
   margin-right: 3rem;
   padding-bottom: 0.5rem;
-  border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
   color: #f4f4f4;
   text-transform: uppercase;
   font-size: 1.3rem;
   transition: all 0.4s;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
 }
 .navigation li a:hover,
 .navigation-active {
   background-color: #e73827;
+  background-color: #730099;
 }
 
 .travel {
   width: 55%;
   padding: 5rem;
-  /* padding: 4rem; */
+  padding: 4rem;
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 0.3rem;
   transform: translate(-50%, -40%);
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
 }
 .heading-1 {
   font-size: 3.5rem;
@@ -240,6 +253,7 @@ h3 {
 /* ##################################### Journey Section ################################################# */
 .journey {
   padding: 10rem;
+  background-color: #730039;
 }
 .journey::after {
   content: "";
@@ -259,12 +273,15 @@ h3 {
 }
 .box {
   width: 32%;
-  margin-right: 0.5rem;
   float: left;
   text-align: center;
   box-shadow: 0 2rem 0 -1rem #0400ff, 0 4rem 0 -2rem #adff2f,
     0 6rem 0 -3rem #800080;
+  box-shadow: 0 2rem 0 -1rem #730099, 0 4rem 0 -2rem #a5c201;
   padding: 2rem 3rem;
+}
+.box:not(:last-child) {
+  margin-right: 1.7rem;
 }
 .box-1 {
   background-color: #1e9797;
@@ -274,6 +291,94 @@ h3 {
 }
 .box-3 {
   background-color: #1e9797;
+}
+
+/* ##################################### pricing Section ################################################# */
+.pricing {
+  padding: 10rem 0;
+}
+.pricing::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pricing__plan {
+  float: left;
+  border: 2px solid #fdf2e9;
+  border: 2px solid #ffedde;
+  padding: 4.6rem;
+  width: 45%;
+}
+.pricing__plan--complete {
+  background: #ffedde;
+  position: relative;
+  overflow: hidden;
+}
+.pricing__plan--complete::after {
+  content: "best value";
+  display: inline-block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  position: absolute;
+  top: 7%;
+  right: -18%;
+  transform: rotate(45deg);
+  background: #ffd43e;
+}
+.pricing__header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing__name {
+  font-size: 2.5rem;
+  color: #cf711f;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 3rem;
+}
+.pricing__price {
+  font-size: 6.2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #333;
+  line-height: 1;
+}
+.pricing__price span {
+  font-size: 3rem;
+}
+.pricing__text {
+  line-height: 1;
+  font-size: 1.4rem;
+  color: #6f6f6f;
+}
+.pricing__plan:not(:last-child) {
+  margin-right: 5rem;
+}
+.pricing__info i {
+  color: #cf711f;
+  width: 3rem;
+  height: 3rem;
+}
+.pricing__info span {
+  font-size: 1.8rem;
+  color: #555;
+}
+.pricing__sign-up {
+  font-size: 2rem;
+  margin-top: 4.8rem;
+}
+.pricing__sign-up .btn--text:link,
+.pricing__sign-up .btn--text:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.3rem 3.2rem;
+  border-radius: 0.8rem;
+  background-color: #cf711f;
+  color: #fff;
 }
 
 /* ########################################### footer Section Styling ######################################################## */
@@ -288,13 +393,16 @@ h3 {
 
 /* ############################################ about us #######################################################################################  */
 .about-us {
-  padding: 10rem 0;
+  padding: 6rem 0;
   background-color: #f0d8d8;
 }
 .counting::after {
   content: "";
   display: block;
   clear: both;
+}
+.counting ul li {
+  font-size: 1.8rem;
 }
 .counting li::before {
   content: "\2713";
@@ -312,6 +420,7 @@ h3 {
   padding-bottom: 1rem;
 }
 .about-us p {
+  font-size: 1.8rem;
   font-weight: 500;
 }
 .counting .left {
@@ -353,7 +462,7 @@ h3 {
   float: left;
 }
 .contact p {
-  padding-top: 2%;
+  padding-top: 0.4rem;
 }
 .banner-right {
   width: 40%;
