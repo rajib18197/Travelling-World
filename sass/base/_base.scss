@@ -1,0 +1,24 @@
+/* ########################## HTML Styling ############################### */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.7;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}

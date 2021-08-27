@@ -1,0 +1,35 @@
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.3rem 3rem;
+  border-radius: 10rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn--primary {
+  background: #e73827;
+  color: #fff;
+}
+.btn-secondary {
+  padding: 0.9rem 5rem;
+  text-transform: uppercase;
+  background-color: #e73827;
+  color: #f4f4f4;
+  border: 2px solid #f4f4f4;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: #f82727;
+}
+
+.btn1:link,
+.btn1:visited {
+  padding: 1rem 5rem;
+}

@@ -1,0 +1,72 @@
+.navigation {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  &__logo-box {
+    flex: 1;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 4;
+  }
+  &__logo:link,
+  &__logo:visited {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    position: relative;
+    z-index: 4;
+  }
+  &__link:link,
+  &__link:visited {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    padding: 0.8rem 2rem;
+    color: #f4f4f4;
+    text-transform: capitalize;
+    transition: all 0.4s;
+  }
+  &__link:hover,
+  &__link:active,
+  &__link--active {
+    background-color: #730099;
+  }
+}
+
+// Showcase section
+.showcase {
+  width: 48%;
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.3rem;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  color: $color-grey-light-1;
+}
