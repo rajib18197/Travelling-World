@@ -1,6 +1,6 @@
 /* ################################ Utility Class ######################################## */
 .container {
-  max-width: 100rem;
+  max-width: 110rem;
   margin: 0 auto;
 }
 .center-text {
@@ -33,4 +33,7 @@
 .bg-dark {
   background-color: #263238;
   background-color: #101d28;
+}
+.margin-right-small {
+  margin-right: 1.6rem !important;
 }

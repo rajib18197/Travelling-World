@@ -4,13 +4,18 @@
   background-color: #0c1023;
 }
 .pricing-board {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  place-content: center;
+  column-gap: 6.4rem;
+  margin: 0 2rem;
 }
 .pricing__plan {
   border: 2px solid #fdf2e9;
   border: 2px solid #ffedde;
-  padding: 5.6rem;
+  padding: 5rem;
 }
 .pricing__plan--complete {
   background: #ffedde;
@@ -59,7 +64,10 @@
   color: #6f6f6f;
 }
 .pricing__plan:not(:last-child) {
-  margin-right: 6.4rem;
+  // margin-right: 6.4rem;
+}
+.pricing__plan {
+  // margin-right: 6.4rem;
 }
 .pricing__list {
   display: flex;

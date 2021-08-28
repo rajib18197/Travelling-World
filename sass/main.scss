@@ -8,7 +8,9 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/features";
 @import "components/form";
+@import "components/howItWorks";
 @import "components/meals";
 @import "components/pricingCard";
 @import "components/testimonials";
@@ -17,6 +19,7 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/section-about";
 
 @import "pages/about";
 @import "pages/contact";

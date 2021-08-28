@@ -45,6 +45,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 1rem;
+    backface-visibility: hidden;
     transition: all 0.3s;
   }
   &__title {

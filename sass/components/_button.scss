@@ -33,3 +33,13 @@
 .btn1:visited {
   padding: 1rem 5rem;
 }
+.btn--full {
+  background-color: #e73827;
+  color: $color-grey-light-1;
+  align-self: flex-start;
+}
+.btn--outline {
+  background-color: $color-grey-light-1;
+  color: #555;
+  align-self: flex-start;
+}

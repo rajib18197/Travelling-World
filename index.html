@@ -18,9 +18,9 @@
     ></script>
     <title>Restaurant Food</title>
   </head>
+
   <body>
     <header class="header">
-
       <div class="navigation">
         <div class="container">
           <nav class="navigation__nav">
@@ -37,10 +37,12 @@
                   >home</a
                 >
               </li>
-              <li class="navigation__list"><a href="About.html" class="navigation__link">about</a></li>
+              <li class="navigation__list">
+                <a href="About.html" class="navigation__link">about</a>
+              </li>
               <li>
-                <a href="Contact.html" class="navigation__link">contact us</a> 
-              </li class="navigation__list">
+                <a href="Contact.html" class="navigation__link">contact us</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -51,24 +53,85 @@
         <p class="paragraph">Eat healthy food, It is good for Your health</p>
         <a href="#" class="btn btn--primary btn--white">explore places</a>
       </div>
-
     </header>
 
     <main>
+      <section class="section-how">
+        <div class="container">
+          <span class="sub-heading">How it Works</span>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+        <div class="container">
+          <div class="steps">
+            <div class="step">
+              <!-- step 01 -->
+              <div class="step__text-box">
+                <p class="step__number">01</p>
+                <h2 class="heading-tertiary">
+                  Tell us what you like (and what not)
+                </h2>
+                <p class="step__description">
+                  Never again waste time thinking about what to eat! Omnifood AI
+                  will create a 100% personalized weekly meal plan just for you.
+                  It makes sure you get all the nutrients and vitamins you need,
+                  no matter what diet you follow!
+                </p>
+              </div>
+              <div class="step__image-box">
+                <img src="images/app-screen-1.png" alt="" class="step__img" />
+              </div>
+
+              <!-- step 02 -->
+
+              <div class="step__image-box">
+                <img src="images/app-screen-2.png" alt="" class="step__img" />
+              </div>
+              <div class="step__text-box">
+                <p class="step__number">02</p>
+                <h2 class="heading-tertiary">Approve your weekly meal plan</h2>
+                <p class="step__description">
+                  Once per week, approve the meal plan generated for you by
+                  Omnifood AI. You can change ingredients, swap entire meals, or
+                  even add your own recipes.
+                </p>
+              </div>
+
+              <!-- step-03 -->
+              <div class="step__text-box">
+                <p class="step__number">03</p>
+                <h2 class="heading-tertiary">
+                  Receive meals at convenient time
+                </h2>
+                <p class="step__description">
+                  Best chefs in town will cook your selected meal every day, and
+                  we will deliver it to your door whenever works best for you.
+                  You can change delivery schedule and address daily!
+                </p>
+              </div>
+              <div class="step__image-box">
+                <img src="images/app-screen-3.png" alt="" class="step__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section-meals">
         <div class="container center-text">
           <span class="sub-heading">Meals</span>
-          <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes
+          <h2 class="heading-secondary">
+            Omnifood AI chooses from 5,000+ recipes
           </h2>
         </div>
 
         <div class="container">
           <div class="meals">
             <div class="meal">
-
               <div class="meal__details">
                 <div class="meal__image-box">
-                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+                  <img src="images/food-menu.jpg" alt="" class="meal__img" />
                 </div>
                 <div class="meal__content-box">
                   <h3 class="meal__title">Pizza Bowl</h3>
@@ -78,12 +141,10 @@
                   </p>
                   <p class="meal__price">Price:$250</p>
                 </div>
-              </div> 
-
+              </div>
             </div>
 
             <div class="meal">
-
               <div class="meal__details">
                 <div class="meal__image-box">
                   <img src="images/food-menu1.jpg" alt="" class="meal__img" />
@@ -96,12 +157,10 @@
                   </p>
                   <p class="meal__price">Price:$250</p>
                 </div>
-              </div> 
-
+              </div>
             </div>
 
             <div class="meal">
-
               <div class="meal__details">
                 <div class="meal__image-box">
                   <img src="images/food-menu1.jpg" alt="" class="meal__img" />
@@ -114,12 +173,10 @@
                   </p>
                   <p class="meal__price">Price:$250</p>
                 </div>
-              </div> 
-
+              </div>
             </div>
 
             <div class="meal">
-
               <div class="meal__details">
                 <div class="meal__image-box">
                   <img src="images/food-menu1.jpg" alt="" class="meal__img" />
@@ -132,12 +189,10 @@
                   </p>
                   <p class="meal__price">Price:$250</p>
                 </div>
-              </div> 
-
+              </div>
             </div>
 
             <div class="meal">
-
               <div class="meal__details">
                 <div class="meal__image-box">
                   <img src="images/food-menu1.jpg" alt="" class="meal__img" />
@@ -150,12 +205,10 @@
                   </p>
                   <p class="meal__price">Price:$250</p>
                 </div>
-              </div> 
-
+              </div>
             </div>
 
             <div class="meal">
-
               <div class="meal__details">
                 <div class="meal__image-box">
                   <img src="images/food-menu1.jpg" alt="" class="meal__img" />
@@ -168,39 +221,45 @@
                   </p>
                   <p class="meal__price">Price:$250</p>
                 </div>
-              </div> 
-
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </section>
-    
-
-      <section class="journey">
+      <!-- journer= section-features -->
+      <!-- container-box= features -->
+      <!-- box =feature-box -->
+      <section class="section-features">
         <div class="container">
-          <div class="container-box">
-            <div class="box box-1">
-              <i class="fas fa-route fa-3x text-red"></i>
-              <h1 class="md-heading text-light">Never Cook Again</h1>
-              <p class="text-light">
-                <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-                dignissimos. -->
+          <div class="features">
+            <div class="feature-box feature-box--1">
+              <i class="fas fa-route fa-3x text-red feature-box__icon"></i>
+              <h1 class="md-heading text-light feature-box__title">
+                Never Cook Again
+              </h1>
+              <p class="feature-box__text text-light">
                 Our subscriptions cover 365 days per year, even including major
                 holidays.
               </p>
             </div>
-            <div class="box box-2">
-              <i class="fas fa-dollar-sign fa-3x text-light"></i>
-              <h1 class="md-heading text-light">Local and Organic</h1>
-              <p class="text-light">
+            <div class="feature-box feature-box--2">
+              <i
+                class="fas fa-dollar-sign fa-3x text-light feature-box__icon"
+              ></i>
+              <h1 class="md-heading text-light feature-box__title">
+                Local and Organic
+              </h1>
+              <p class="text-light feature-box__text">
                 Our cooks only use local, fresh, and organic products to prepare
                 your meals.
               </p>
             </div>
-            <div class="box box-3">
-              <i class="fas fa-user-check fa-3x text-red"></i>
-              <h1 class="md-heading text-light">Pause Anytime</h1>
-              <p class="text-light">
+            <div class="feature-box feature-box--3">
+              <i class="fas fa-user-check fa-3x text-red feature-box__icon"></i>
+              <h1 class="md-heading text-light feature-box__title">
+                Pause Anytime
+              </h1>
+              <p class="text-light feature-box__text">
                 Going on vacation? Just pause your subscription, and we refund
                 unused days.
               </p>
@@ -280,13 +339,10 @@
               </div>
             </div>
           </div>
-          <!-- <p>
-            Prices include all applicable taxes. You can cancel at any time.
-            Both plans include the following:
-          </p> -->
         </div>
       </section>
     </main>
+
     <footer class="footer bg-dark">
       <div class="icons">
         <i class="fab fa-facebook fa-4x"></i>

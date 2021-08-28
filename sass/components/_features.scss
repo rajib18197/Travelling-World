@@ -1,0 +1,37 @@
+.features {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.feature-box {
+  text-align: center;
+  /* box-shadow: 0 2rem 0 -1rem #0400ff, 0 4rem 0 -2rem #adff2f,
+              0 6rem 0 -3rem #800080; */
+  box-shadow: 0 2rem 0 -1rem #730099, 0 4rem 0 -2rem #a5c201;
+  box-shadow: 0 3.4rem 0 -2rem #a5c201;
+  padding: 2rem 3rem;
+  &:not(:last-child) {
+    margin-right: 1.7rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+  }
+  &__text {
+    font-size: 1.7rem;
+    /* font-weight: 400; */
+  }
+
+  &--1 {
+    background-color: #1e9797;
+  }
+  &--2 {
+    background-color: #e73827;
+  }
+  &--3 {
+    background-color: #1e9797;
+  }
+}
