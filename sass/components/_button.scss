@@ -43,3 +43,17 @@
   color: #555;
   align-self: flex-start;
 }
+.all-recipies {
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+  margin-top: 4.6rem;
+  display: inline-block;
+  color: #e73827;
+  border-bottom: 1px solid #e73827;
+  transition: all 0.3s;
+}
+.link:hover {
+  border-bottom: none;
+}

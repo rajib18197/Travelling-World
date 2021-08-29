@@ -12,9 +12,14 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Icon -->
     <script
-      src="https://kit.fontawesome.com/1b3e8e88ed.js"
-      crossorigin="anonymous"
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <title>Restaurant Food</title>
   </head>
@@ -24,11 +29,18 @@
       <div class="navigation">
         <div class="container">
           <nav class="navigation__nav">
-            <h2 class="navigation__logo-box">
+            <!-- <h2 class="navigation__logo-box">
               <a href="index.html" class="navigation__logo text-light"
                 >Restaurant Food</a
               >
-            </h2>
+            </h2> -->
+            <a class="navigation__logo-box">
+              <img
+                src="images/omnifood-logo.png"
+                alt=""
+                class="navigation__logo text-light"
+              />
+            </a>
             <ul class="navigation__lists">
               <li class="navigation__list">
                 <a
@@ -53,9 +65,54 @@
         <p class="paragraph">Eat healthy food, It is good for Your health</p>
         <a href="#" class="btn btn--primary btn--white">explore places</a>
       </div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0c1023"
+          fill-opacity="1"
+          d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,170.7C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg> -->
     </header>
 
     <main>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in center-text">As Featured In</h2>
+          <div class="logos">
+            <figure class="logos__img">
+              <img src="images/techcrunch.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/techcrunch.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/the-new-york-times.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/the-new-york-times.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/business-insider.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/the-new-york-times.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/techcrunch.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/business-insider.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/business-insider.png" alt="" />
+            </figure>
+            <figure class="logos__img">
+              <img src="images/business-insider.png" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section class="section-how">
         <div class="container">
           <span class="sub-heading">How it Works</span>
@@ -226,14 +283,16 @@
           </div>
         </div>
       </section>
-      <!-- journer= section-features -->
-      <!-- container-box= features -->
-      <!-- box =feature-box -->
+
       <section class="section-features">
         <div class="container">
           <div class="features">
+            <!-- feature 01 -->
             <div class="feature-box feature-box--1">
-              <i class="fas fa-route fa-3x text-red feature-box__icon"></i>
+              <ion-icon
+                class="feature-box__icon"
+                name="infinite-outline"
+              ></ion-icon>
               <h1 class="md-heading text-light feature-box__title">
                 Never Cook Again
               </h1>
@@ -242,10 +301,13 @@
                 holidays.
               </p>
             </div>
+            <!-- feature -02 -->
             <div class="feature-box feature-box--2">
-              <i
-                class="fas fa-dollar-sign fa-3x text-light feature-box__icon"
-              ></i>
+              <ion-icon
+                class="feature-box__icon"
+                name="nutrition-outline"
+              ></ion-icon>
+
               <h1 class="md-heading text-light feature-box__title">
                 Local and Organic
               </h1>
@@ -254,8 +316,12 @@
                 your meals.
               </p>
             </div>
+            <!-- feature -03 -->
             <div class="feature-box feature-box--3">
-              <i class="fas fa-user-check fa-3x text-red feature-box__icon"></i>
+              <ion-icon
+                class="feature-box__icon"
+                name="pause-outline"
+              ></ion-icon>
               <h1 class="md-heading text-light feature-box__title">
                 Pause Anytime
               </h1>
@@ -270,8 +336,15 @@
 
       <section class="pricing">
         <div class="container">
+          <span class="sub-heading">Pricing</span>
+          <h2 class="heading-secondary">
+            Eating well without breaking the bank
+          </h2>
+        </div>
+
+        <div class="container">
           <div class="pricing-board">
-            <div class="pricing__plan">
+            <div class="pricing__plan pricing__plan--startar">
               <header class="pricing__header">
                 <h3 class="pricing__name">Startar</h3>
                 <p class="pricing__price text-light">
@@ -339,6 +412,237 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section-food">
+        <div class="container center-text">
+          <span class="sub-heading">Food</span>
+          <h2 class="heading-secondary">
+            Omnifood AI chooses from 5,000+ recipes
+          </h2>
+        </div>
+        <!--  -->
+        <div class="container">
+          <div class="food-meal">
+            <div class="food">
+              <img src="images/food-menu6.jpg" alt="" class="food__img" />
+
+              <div class="food__content">
+                <div class="food__tags">
+                  <span class="tag tag--vegeterian">vegeterian</span>
+                  <p class="food__title">Avocado Salad</p>
+                </div>
+                <ul class="food__attributes">
+                  <li class="food__attribute">
+                    <ion-icon
+                      name="flame-outline"
+                      class="food__icon"
+                    ></ion-icon>
+                    <span><strong>650</strong> Calories</span>
+                  </li>
+                  <li class="food__attribute">
+                    <ion-icon
+                      name="restaurant-outline"
+                      class="food__icon"
+                    ></ion-icon>
+                    <span>Nutrition<strong>74</strong></span>
+                  </li>
+                  <li class="food__attribute">
+                    <ion-icon name="star-outline" class="food__icon"></ion-icon>
+                    <span><strong>4.9</strong> rating(537)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="food">
+              <img src="images/food-menu6.jpg" alt="" class="food__img" />
+
+              <div class="food__content">
+                <div class="food__tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                  <span class="tag tag--paleo">Vegan</span>
+                  <p class="food__title">Avocado Salad</p>
+                </div>
+                <ul class="food__attributes">
+                  <li class="food__attribute">
+                    <ion-icon
+                      name="flame-outline"
+                      class="food__icon"
+                    ></ion-icon>
+                    <span><strong>650</strong> Calories</span>
+                  </li>
+                  <li class="food__attribute">
+                    <ion-icon
+                      name="restaurant-outline"
+                      class="food__icon"
+                    ></ion-icon>
+                    <span>Nutrition<strong>74</strong></span>
+                  </li>
+                  <li class="food__attribute">
+                    <ion-icon name="star-outline" class="food__icon"></ion-icon>
+                    <span><strong>4.9</strong> rating(537)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="diet">
+              <h3 class="heading-tertiary text-light">Works with any diet:</h3>
+              <ul class="diet__lists">
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container center-text all-recipies">
+          <a href="#" class="link">See all recipies &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="testimonials-container">
+          <span class="sub-heading">Testimonials</span>
+          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+          <!-- <div class="testimonials"> -->
+          <!-- story -1 -->
+          <figure class="testimonial">
+            <div class="testimonial__shape">
+              <img src="images/ben.jpg" alt="" class="testimonial__img" />
+              <figcaption class="testimonial__name">Ben Hadley</figcaption>
+            </div>
+            <blockquote class="testimonial__text">
+              Inexpensive, healthy and great-tasting meals, without even having
+              to order manually! It feels truly magical, chooses the right meals
+              for me every time.
+            </blockquote>
+          </figure>
+          <!-- story 2 -->
+          <figure class="testimonial">
+            <div class="testimonial__shape">
+              <img src="images/steve.jpg" alt="" class="testimonial__img" />
+              <figcaption class="testimonial__name">Dave Steve</figcaption>
+            </div>
+            <blockquote class="testimonial__text">
+              Omnifood is a life saver! I just started a company, so there's no
+              time for cooking. I couldn't live without my daily meals now! It's
+              amazing not to worry about food anymore!
+            </blockquote>
+          </figure>
+        </div>
+        <!-- </div> -->
+        <div class="gallery">
+          <!-- image-1 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-2 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-3 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-4 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-5 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image -6 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-7 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-8 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-9 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-10 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-11 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
+          <!-- image-12 -->
+          <figure class="gallery__image">
+            <img src="images/gallery-1 (1).jpg" alt="" />
+          </figure>
         </div>
       </section>
     </main>
