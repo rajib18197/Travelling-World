@@ -1,7 +1,7 @@
 .section-meals {
   padding: 4rem 0;
-  background-color: #0c1023;
-  color: $color-grey-light-1;
+  // background-color: #0c1023;
+  // color: $color-grey-light-1;
 }
 .meals {
   padding-top: 4rem;
@@ -10,23 +10,25 @@
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  padding-left: 3.2rem;
+  padding-left: 1.2rem;
   margin-top: 4rem;
 }
 .meal {
   display: flex;
-  width: 45%;
+  width: 46%;
   margin-right: 4rem;
   &__details {
     margin-bottom: 4rem;
     display: flex;
-    margin-right: 4rem;
+    // margin-right: 4rem;
   }
   &__img {
     display: block;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     border: 0.6rem solid $color-grey-light-4;
+    border: 0.6rem solid #ff6331;
+    border: 0.6rem solid #730099;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -34,9 +36,10 @@
   }
   &__image-box:hover &__img {
     transform: scale(1.14) translateY(-0.5rem);
+    transform: scale(1.15);
   }
   &__details:hover &__content-box:not(:hover) {
-    transform: scale(0.86) translateY(0);
+    transform: scale(0.9) translateY(0);
   }
 
   &__content-box {
@@ -44,7 +47,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     backface-visibility: hidden;
     transition: all 0.3s;
   }
@@ -55,11 +58,12 @@
     margin-bottom: 0.9rem;
   }
   &__price {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
     margin-top: 0.5rem;
   }
   &__description {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 .section-food {
@@ -140,7 +144,7 @@
   }
 }
 .diet {
-  color: $color-grey-light-1;
+  // color: $color-grey-light-1;
   &__lists {
     list-style: none;
     display: flex;

@@ -7,7 +7,8 @@
   padding: 9.6rem;
 }
 .testimonial {
-  background-color: #182025;
+  // background-color: #182025;
+  background-color: #ec407a;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
   padding: 4rem;
@@ -35,7 +36,7 @@
   &__text {
     font-size: 1.8rem;
     transform: skewX(12deg);
-    color: $color-grey-light-1;
+    // color: $color-grey-light-1;
   }
   &__name {
     position: absolute;
@@ -46,7 +47,7 @@
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
-    color: $color-grey-light-1;
+    // color: $color-grey-light-1;
     opacity: 0;
     transition: all 0.4s;
   }

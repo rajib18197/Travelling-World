@@ -3,12 +3,12 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-  color: $color-grey-light-1;
+  // color: $color-grey-light-1;
 
   &__number {
     font-size: 8.6rem;
     font-weight: 600;
-    color: #333;
+    color: #ddd;
     margin-bottom: 1.2rem;
   }
   &__description {
@@ -46,5 +46,17 @@
   &__img {
     width: 35%;
     object-fit: cover;
+    // animation: moveIn 10s infinite;
   }
 }
+// @keyframes moveIn {
+//   0% {
+//     transform: translateY(2%);
+//   }
+//   50% {
+//     transform: translateY(-2%);
+//   }
+//   100% {
+//     transform: translateY(2%);
+//   }
+// }

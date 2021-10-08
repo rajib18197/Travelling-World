@@ -1,18 +1,21 @@
 .header {
-  // margin: 0 0 10rem 0;
   position: relative;
-  height: 98vh;
+  // height: 98vh;
   // height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("../images/home-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  // background: linear-gradient(
+  //     rgba(255, 255, 255, 0.5),
+  //     rgba(255, 255, 255, 0.5)
+  //   ),
+  //   url("../images/home-bg.jpg");
+  // background-size: cover;
+  // background-position: center;
+  background-color: #fdf2e9;
+
   svg {
     position: absolute;
     left: 0;
     bottom: -20%;
   }
 }
+// color: #FF6331
+// ##FFc50c #ec407a
