@@ -32,47 +32,38 @@
     <header class="header">
       <!----------Navigation------------------>
       <div class="navigation">
+        <a class="navigation__logo-box">
+          <img
+            src="images/omnifood-logo.png"
+            alt=""
+            class="navigation__logo text-light"
+          />
+        </a>
         <nav class="navigation__nav">
-          <a class="navigation__logo-box">
-            <img
-              src="images/omnifood-logo.png"
-              alt=""
-              class="navigation__logo text-light"
-            />
-          </a>
           <ul class="navigation__lists">
             <li class="navigation__list">
-              <a
-                href="index.html"
-                class="navigation__link navigation__link--active"
-                >home</a
-              >
+              <a href="#" class="navigation__link">How it works</a>
             </li>
             <li class="navigation__list">
-              <a href="About.html" class="navigation__link">about</a>
+              <a href="#" class="navigation__link">Meals</a>
             </li>
             <li class="navigation__list">
-              <a href="index.html" class="navigation__link">Pricing</a>
+              <a href="#" class="navigation__link">Testimonials</a>
+            </li>
+            <li class="navigation__list">
+              <a href="#" class="navigation__link">Pricing</a>
             </li>
             <li>
-              <a href="Contact.html" class="navigation__link">contact us</a>
+              <a href="#" class="navigation__link navigation__link--active"
+                >Try for free</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-      <!----------Header SHowcase------------------>
-      <!-- <div class="showcase">
-        <h1 class="heading-primary">Eat Right Food</h1>
-        <p class="paragraph">Eat healthy food, It is good for Your health</p>
-        <a href="#" class="btn btn--primary btn--white">explore places</a>
-      </div> -->
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0c1023"
-          fill-opacity="1"
-          d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,176C672,192,768,192,864,170.7C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg> -->
+    </header>
+
+    <main>
       <section class="section-about">
         <div class="about">
           <div class="about__text-box">
@@ -124,9 +115,6 @@
           </div>
         </div>
       </section>
-    </header>
-
-    <main>
       <!----------Features Section------------------>
       <section class="section-featured">
         <div class="container">
@@ -227,165 +215,162 @@
           </div>
         </div>
       </section>
-      <!-------------Meals Section------------------>
-      <section class="section-meals">
+      <!--------------- Special Food Section------------------>
+      <section class="section-recipes">
         <div class="container center-text">
-          <span class="sub-heading">Meals</span>
+          <span class="sub-heading">Food</span>
           <h2 class="heading-secondary">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
         </div>
-
+        <!--  -->
         <div class="container">
-          <div class="meals">
-            <div class="meal">
-              <div class="meal__details">
-                <div class="meal__image-box">
-                  <img src="images/food-menu.jpg" alt="" class="meal__img" />
+          <div class="recipes">
+            <!-- Recipe 01 -->
+            <div class="recipe">
+              <img src="images/food-menu6.jpg" alt="" class="recipe__img" />
+
+              <div class="recipe__content">
+                <div class="recipe__tags">
+                  <span class="tag tag--vegeterian">vegeterian</span>
+                  <p class="recipe__title">Avocado Salad</p>
                 </div>
-                <div class="meal__content-box">
-                  <h3 class="meal__title">Pizza Bowl</h3>
-                  <p class="meal__description">
-                    Inexpensive, healthy and great-tasting meals, without even
-                    having to order manually.
-                  </p>
-                  <p class="meal__price">Price:$250</p>
-                </div>
+                <ul class="recipe__attributes">
+                  <li class="recipe__attribute">
+                    <ion-icon
+                      name="flame-outline"
+                      class="recipe__icon"
+                    ></ion-icon>
+                    <span><strong>650</strong> Calories</span>
+                  </li>
+                  <li class="recipe__attribute">
+                    <ion-icon
+                      name="restaurant-outline"
+                      class="recipe__icon"
+                    ></ion-icon>
+                    <span>Nutrition<strong>74</strong></span>
+                  </li>
+                  <li class="recipe__attribute">
+                    <ion-icon
+                      name="star-outline"
+                      class="recipe__icon"
+                    ></ion-icon>
+                    <span><strong>4.9</strong> rating(537)</span>
+                  </li>
+                </ul>
               </div>
             </div>
+            <!-- Recipes 02 -->
+            <div class="recipe">
+              <img src="images/food-menu6.jpg" alt="" class="recipe__img" />
 
-            <div class="meal">
-              <div class="meal__details">
-                <div class="meal__image-box">
-                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+              <div class="recipe__content">
+                <div class="recipe__tags">
+                  <span class="tag tag--vegan">Vegan</span>
+                  <span class="tag tag--paleo">Vegan</span>
+                  <p class="recipe__title">Avocado Salad</p>
                 </div>
-                <div class="meal__content-box">
-                  <h3 class="meal__title">Pizza Bowl</h3>
-                  <p class="meal__description">
-                    Inexpensive, healthy and great-tasting meals, without even
-                    having to order manually.
-                  </p>
-                  <p class="meal__price">Price:$250</p>
-                </div>
+                <ul class="recipe__attributes">
+                  <li class="recipe__attribute">
+                    <ion-icon
+                      name="flame-outline"
+                      class="recipe__icon"
+                    ></ion-icon>
+                    <span><strong>650</strong> Calories</span>
+                  </li>
+                  <li class="recipe__attribute">
+                    <ion-icon
+                      name="restaurant-outline"
+                      class="recipe__icon"
+                    ></ion-icon>
+                    <span>Nutrition<strong>74</strong></span>
+                  </li>
+                  <li class="recipe__attribute">
+                    <ion-icon
+                      name="star-outline"
+                      class="recipe__icon"
+                    ></ion-icon>
+                    <span><strong>4.9</strong> rating(537)</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <div class="meal">
-              <div class="meal__details">
-                <div class="meal__image-box">
-                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-                </div>
-                <div class="meal__content-box">
-                  <h3 class="meal__title">Pizza Bowl</h3>
-                  <p class="meal__description">
-                    Inexpensive, healthy and great-tasting meals, without even
-                    having to order manually.
-                  </p>
-                  <p class="meal__price">Price:$250</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="meal">
-              <div class="meal__details">
-                <div class="meal__image-box">
-                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-                </div>
-                <div class="meal__content-box">
-                  <h3 class="meal__title">Pizza Bowl</h3>
-                  <p class="meal__description">
-                    Inexpensive, healthy and great-tasting meals, without even
-                    having to order manually.
-                  </p>
-                  <p class="meal__price">Price:$250</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="meal">
-              <div class="meal__details">
-                <div class="meal__image-box">
-                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-                </div>
-                <div class="meal__content-box">
-                  <h3 class="meal__title">Pizza Bowl</h3>
-                  <p class="meal__description">
-                    Inexpensive, healthy and great-tasting meals, without even
-                    having to order manually.
-                  </p>
-                  <p class="meal__price">Price:$250</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="meal">
-              <div class="meal__details">
-                <div class="meal__image-box">
-                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-                </div>
-                <div class="meal__content-box">
-                  <h3 class="meal__title">Pizza Bowl</h3>
-                  <p class="meal__description">
-                    Inexpensive, healthy and great-tasting meals, without even
-                    having to order manually.
-                  </p>
-                  <p class="meal__price">Price:$250</p>
-                </div>
-              </div>
+            <!-- Diet Chart -->
+            <div class="diet">
+              <h3 class="heading-tertiary">Works with any diet:</h3>
+              <ul class="diet__lists">
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+                <li class="diet__list">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="diet__icon"
+                  ></ion-icon>
+                  <span>Vegeterian</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <!-----------Features Section------------------>
-      <section class="section-features">
-        <div class="container">
-          <div class="features">
-            <!-- feature 01 -->
-            <div class="feature-box feature-box--1">
-              <ion-icon
-                class="feature-box__icon"
-                name="infinite-outline"
-              ></ion-icon>
-              <h1 class="md-heading text-light feature-box__title">
-                Never Cook Again
-              </h1>
-              <p class="feature-box__text text-light">
-                Our subscriptions cover 365 days per year, even including major
-                holidays.
-              </p>
-            </div>
-            <!-- feature -02 -->
-            <div class="feature-box feature-box--2">
-              <ion-icon
-                class="feature-box__icon"
-                name="nutrition-outline"
-              ></ion-icon>
-
-              <h1 class="md-heading text-light feature-box__title">
-                Local and Organic
-              </h1>
-              <p class="text-light feature-box__text">
-                Our cooks only use local, fresh, and organic products to prepare
-                your meals.
-              </p>
-            </div>
-            <!-- feature -03 -->
-            <div class="feature-box feature-box--3">
-              <ion-icon
-                class="feature-box__icon"
-                name="pause-outline"
-              ></ion-icon>
-              <h1 class="md-heading text-light feature-box__title">
-                Pause Anytime
-              </h1>
-              <p class="text-light feature-box__text">
-                Going on vacation? Just pause your subscription, and we refund
-                unused days.
-              </p>
-            </div>
-          </div>
+        <div class="container center-text all-recipies">
+          <a href="#" class="link">See all recipies &rarr;</a>
         </div>
       </section>
+
       <!---------------Pricing Section--------------->
       <section class="pricing">
         <div class="container">
@@ -537,154 +522,168 @@
           </div>
         </div>
       </section>
-      <!---------------Food Section------------------>
-      <section class="section-food">
+
+      <!------------- Meals Section------------------>
+      <section class="section-meals">
         <div class="container center-text">
-          <span class="sub-heading">Food</span>
+          <span class="sub-heading">Ordering Meals</span>
           <h2 class="heading-secondary">
-            Omnifood AI chooses from 5,000+ recipes
+            Don't Wanna go with Monthly Subscription, No Problem! try manually.
           </h2>
         </div>
-        <!--  -->
+
         <div class="container">
-          <div class="food-meal">
-            <div class="food">
-              <img src="images/food-menu6.jpg" alt="" class="food__img" />
-
-              <div class="food__content">
-                <div class="food__tags">
-                  <span class="tag tag--vegeterian">vegeterian</span>
-                  <p class="food__title">Avocado Salad</p>
+          <div class="meals">
+            <div class="meal">
+              <div class="meal__details">
+                <div class="meal__image-box">
+                  <img src="images/food-menu.jpg" alt="" class="meal__img" />
                 </div>
-                <ul class="food__attributes">
-                  <li class="food__attribute">
-                    <ion-icon
-                      name="flame-outline"
-                      class="food__icon"
-                    ></ion-icon>
-                    <span><strong>650</strong> Calories</span>
-                  </li>
-                  <li class="food__attribute">
-                    <ion-icon
-                      name="restaurant-outline"
-                      class="food__icon"
-                    ></ion-icon>
-                    <span>Nutrition<strong>74</strong></span>
-                  </li>
-                  <li class="food__attribute">
-                    <ion-icon name="star-outline" class="food__icon"></ion-icon>
-                    <span><strong>4.9</strong> rating(537)</span>
-                  </li>
-                </ul>
+                <div class="meal__content-box">
+                  <h3 class="meal__title">Pizza Bowl</h3>
+                  <p class="meal__description">
+                    Inexpensive, healthy and great-tasting meals, without even
+                    having to order manually.
+                  </p>
+                  <p class="meal__price">Price:$250</p>
+                </div>
               </div>
             </div>
 
-            <div class="food">
-              <img src="images/food-menu6.jpg" alt="" class="food__img" />
-
-              <div class="food__content">
-                <div class="food__tags">
-                  <span class="tag tag--vegan">Vegan</span>
-                  <span class="tag tag--paleo">Vegan</span>
-                  <p class="food__title">Avocado Salad</p>
+            <div class="meal">
+              <div class="meal__details">
+                <div class="meal__image-box">
+                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
                 </div>
-                <ul class="food__attributes">
-                  <li class="food__attribute">
-                    <ion-icon
-                      name="flame-outline"
-                      class="food__icon"
-                    ></ion-icon>
-                    <span><strong>650</strong> Calories</span>
-                  </li>
-                  <li class="food__attribute">
-                    <ion-icon
-                      name="restaurant-outline"
-                      class="food__icon"
-                    ></ion-icon>
-                    <span>Nutrition<strong>74</strong></span>
-                  </li>
-                  <li class="food__attribute">
-                    <ion-icon name="star-outline" class="food__icon"></ion-icon>
-                    <span><strong>4.9</strong> rating(537)</span>
-                  </li>
-                </ul>
+                <div class="meal__content-box">
+                  <h3 class="meal__title">Pizza Bowl</h3>
+                  <p class="meal__description">
+                    Inexpensive, healthy and great-tasting meals, without even
+                    having to order manually.
+                  </p>
+                  <p class="meal__price">Price:$250</p>
+                </div>
               </div>
             </div>
 
-            <div class="diet">
-              <h3 class="heading-tertiary">Works with any diet:</h3>
-              <ul class="diet__lists">
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-                <li class="diet__list">
-                  <ion-icon
-                    name="checkmark-outline"
-                    class="diet__icon"
-                  ></ion-icon>
-                  <span>Vegeterian</span>
-                </li>
-              </ul>
+            <div class="meal">
+              <div class="meal__details">
+                <div class="meal__image-box">
+                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+                </div>
+                <div class="meal__content-box">
+                  <h3 class="meal__title">Pizza Bowl</h3>
+                  <p class="meal__description">
+                    Inexpensive, healthy and great-tasting meals, without even
+                    having to order manually.
+                  </p>
+                  <p class="meal__price">Price:$250</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="meal">
+              <div class="meal__details">
+                <div class="meal__image-box">
+                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+                </div>
+                <div class="meal__content-box">
+                  <h3 class="meal__title">Pizza Bowl</h3>
+                  <p class="meal__description">
+                    Inexpensive, healthy and great-tasting meals, without even
+                    having to order manually.
+                  </p>
+                  <p class="meal__price">Price:$250</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="meal">
+              <div class="meal__details">
+                <div class="meal__image-box">
+                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+                </div>
+                <div class="meal__content-box">
+                  <h3 class="meal__title">Pizza Bowl</h3>
+                  <p class="meal__description">
+                    Inexpensive, healthy and great-tasting meals, without even
+                    having to order manually.
+                  </p>
+                  <p class="meal__price">Price:$250</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="meal">
+              <div class="meal__details">
+                <div class="meal__image-box">
+                  <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+                </div>
+                <div class="meal__content-box">
+                  <h3 class="meal__title">Pizza Bowl</h3>
+                  <p class="meal__description">
+                    Inexpensive, healthy and great-tasting meals, without even
+                    having to order manually.
+                  </p>
+                  <p class="meal__price">Price:$250</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container center-text all-recipies">
-          <a href="#" class="link">See all recipies &rarr;</a>
+      </section>
+
+      <!-----------Features Section------------------>
+      <section class="section-features">
+        <div class="container">
+          <div class="features">
+            <!-- feature 01 -->
+            <div class="feature-box feature-box--1">
+              <ion-icon
+                class="feature-box__icon"
+                name="infinite-outline"
+              ></ion-icon>
+              <h1 class="md-heading text-light feature-box__title">
+                Never Cook Again
+              </h1>
+              <p class="feature-box__text text-light">
+                Our subscriptions cover 365 days per year, even including major
+                holidays.
+              </p>
+            </div>
+            <!-- feature -02 -->
+            <div class="feature-box feature-box--2">
+              <ion-icon
+                class="feature-box__icon"
+                name="nutrition-outline"
+              ></ion-icon>
+
+              <h1 class="md-heading text-light feature-box__title">
+                Local and Organic
+              </h1>
+              <p class="text-light feature-box__text">
+                Our cooks only use local, fresh, and organic products to prepare
+                your meals.
+              </p>
+            </div>
+            <!-- feature -03 -->
+            <div class="feature-box feature-box--3">
+              <ion-icon
+                class="feature-box__icon"
+                name="pause-outline"
+              ></ion-icon>
+              <h1 class="md-heading text-light feature-box__title">
+                Pause Anytime
+              </h1>
+              <p class="text-light feature-box__text">
+                Going on vacation? Just pause your subscription, and we refund
+                unused days.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
       <!------------Testimonials Section------------->
       <section class="section-testimonials">
         <div class="testimonials-container">

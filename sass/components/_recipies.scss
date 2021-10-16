@@ -1,0 +1,97 @@
+.section-recipes {
+  padding: 9.6rem 0;
+}
+
+// food
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.recipe {
+  background-color: #101d26;
+  color: $color-grey-light-1;
+  &__img {
+    border-radius: 1.1rem;
+    width: 100%;
+  }
+  &__content {
+    position: relative;
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+  &__tags {
+    position: absolute;
+    background-color: $color-grey-light-1;
+    width: 80%;
+    top: -6rem;
+    left: 0;
+    padding: 1rem;
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #333;
+  }
+  &__attributes {
+    margin-top: 6.4rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__attribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    strong {
+      font-weight: 500;
+    }
+  }
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #e67322;
+  }
+}
+.diet {
+  // color: $color-grey-light-1;
+  &__lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  &__list {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+  }
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  &--vegeterian {
+    background-color: #51cf66;
+  }
+  &--vegan {
+    background-color: #94d82d;
+  }
+  &--paleo {
+    background-color: #ffd43b;
+  }
+}
