@@ -1,10 +1,7 @@
+/***********************************/
+/* How It Works (Features Steps) */
+/***********************************/
 .step {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  // color: $color-grey-light-1;
-
   &__number {
     font-size: 8.6rem;
     font-weight: 600;
@@ -31,10 +28,10 @@
       transform: translate(-50%, -50%);
     }
     &::before {
-      width: 55%;
+      width: 60%;
       background-color: #fdf2e9;
       z-index: -2;
-      padding-bottom: 55%;
+      padding-bottom: 60%;
     }
     &::after {
       width: 45%;
@@ -49,6 +46,8 @@
     // animation: moveIn 10s infinite;
   }
 }
+
+// animation
 // @keyframes moveIn {
 //   0% {
 //     transform: translateY(2%);

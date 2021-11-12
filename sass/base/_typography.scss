@@ -1,27 +1,35 @@
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
 .heading-primary {
-  font-size: 3.4rem;
+  font-size: 5.2rem;
   line-height: 1.05;
-  letter-spacing: 0.45rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 .heading-secondary {
   font-size: 4.2rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
-  // color: $color-grey-light-1;
 }
 .heading-tertiary {
-  font-size: 2.9rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+}
+.heading-featured-in {
+  font-size: 2rem;
+  color: var(--color-grey-light-1);
+  margin-bottom: 2.4rem;
 }
 .sub-heading {
   display: block;
   font-size: 1.6rem;
-  color: #cf711f;
+  font-weight: 700;
+  color: var(--color-secondary-dark);
   text-transform: uppercase;
   letter-spacing: 0.75px;
   margin-bottom: 1.6rem;

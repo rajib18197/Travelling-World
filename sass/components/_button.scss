@@ -1,15 +1,28 @@
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 1.3rem 3rem;
-  border-radius: 10rem;
-  border-radius: 0.6rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.8rem;
   cursor: pointer;
-  text-transform: uppercase;
   border: none;
   outline: none;
+  font-family: inherit;
   transition: all 0.3s;
   position: relative;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-1);
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: var(--color-grey-light-1);
+  color: #555;
 }
 .btn--primary {
   background: #e73827;
@@ -33,27 +46,17 @@
 .btn1:visited {
   padding: 1rem 5rem;
 }
-.btn--full {
-  background-color: #e73827;
-  color: $color-grey-light-1;
-  align-self: flex-start;
-}
-.btn--outline {
-  background-color: $color-grey-light-1;
-  color: #555;
-  align-self: flex-start;
-}
 .all-recipies {
   font-size: 1.8rem;
 }
 .link:link,
 .link:visited {
-  margin-top: 4.6rem;
   display: inline-block;
-  color: #e73827;
-  border-bottom: 1px solid #e73827;
+  padding-bottom: 2px;
+  color: var(--color-secondary-dark);
+  border-bottom: 1px solid currentColor;
   transition: all 0.3s;
 }
 .link:hover {
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
 }

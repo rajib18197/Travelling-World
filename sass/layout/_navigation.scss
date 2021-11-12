@@ -1,17 +1,4 @@
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 4.8rem;
-  height: 9.6rem;
-  background-color: #fdf2e9;
-
-  &__logo-box {
-    display: flex;
-  }
-  &__logo {
-    height: 2.2rem;
-  }
   &__lists {
     display: flex;
     align-items: center;
@@ -19,25 +6,26 @@
   }
   &__link:link,
   &__link:visited {
-    position: relative;
-    font-size: 1.7rem;
-    font-weight: 500;
     display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
     text-decoration: none;
-    border-radius: 0.3rem;
-    color: #000;
+    color: #333;
     transition: all 0.4s;
     border-radius: 0.5rem;
   }
   &__link:hover,
   &__link:active {
-    color: #730099;
+    color: #a61e4d;
   }
   &__link--active:link,
   &__link--active:visited {
-    padding: 0.8rem 2rem;
-    background-color: #730099;
-    color: $color-grey-light-1;
-    color: $color-grey-light;
+    padding: 1.2rem 2.4rem;
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
+  }
+  &__link--active:hover,
+  &__link--active:visited {
+    background-color: var(--color-primary-light);
   }
 }

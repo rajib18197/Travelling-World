@@ -1,62 +1,67 @@
+/**************************/
+/* Features Boxes */
+/**************************/
 .features {
   display: flex;
-  /* flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  //grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  gap: 2rem;
 }
 .feature-box {
-  width: 32%;
   text-align: center;
-  /* box-shadow: 0 2rem 0 -1rem #0400ff, 0 4rem 0 -2rem #adff2f,
-              0 6rem 0 -3rem #800080; */
   box-shadow: 0 3.4rem 0 -2rem #ffc50c;
-  padding: 2rem 3rem;
+  color: #333;
+
+  padding: 1rem 2.6rem;
   &:not(:last-child) {
     margin-right: 1.7rem;
   }
   &__icon {
     height: 3.2rem;
     width: 3.2rem;
-    color: #e67e22;
-    background-color: #fdf2e9;
+    color: var(--color-secondary-dark);
+    background-color: var(--color-grey-light-4);
+    margin-bottom: 1.6rem;
     padding: 1.6rem;
     border-radius: 50%;
   }
   &__title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 0.6rem;
-    margin-top: 1rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    columns: #333;
+    margin-bottom: 1.6rem;
   }
   &__text {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
   }
 
   &--1 {
-    background-color: #1e9797;
+    background-color: #f3d9fa;
+    background-color: #bac8ff;
+    background-color: #fcc2d7;
   }
   &--2 {
-    background-color: #e73827;
+    background-color: #eebafe;
   }
   &--3 {
-    background-color: #ec407a;
+    background-color: #d0bfff;
+    background-color: #ffc9c9;
   }
 }
-// featured in
-.section-featured {
-  padding: 3.2rem 0 4.8rem 0;
-  background-color: #730039;
-}
-.heading-featured-in {
-  font-size: 2rem;
-  color: $color-grey-light-1;
-  margin-bottom: 2.4rem;
-}
+
+/**************************/
+/* Features In Logos */
+/**************************/
+
 .logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.6rem;
   &__img {
-    background-color: $color-grey-light;
+    background-color: var(--color-grey-light-1);
     padding: 4rem;
     display: flex;
     justify-content: center;

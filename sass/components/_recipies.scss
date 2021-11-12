@@ -1,19 +1,14 @@
-.section-recipes {
-  padding: 9.6rem 0;
-}
-
-// food
-.recipes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-}
+/**************************/
+/* Food Recipes & Diets */
+/**************************/
 .recipe {
-  background-color: #101d26;
-  color: $color-grey-light-1;
+  background-color: #101d36;
+  color: var(--color-grey-light-1);
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.4s ease;
   &__img {
-    border-radius: 1.1rem;
     width: 100%;
   }
   &__content {
@@ -22,11 +17,11 @@
   }
   &__tags {
     position: absolute;
-    background-color: $color-grey-light-1;
+    background-color: var(--color-grey-light-1);
     width: 80%;
     top: -6rem;
     left: 0;
-    padding: 1rem;
+    padding: 2rem;
   }
   &__title {
     font-size: 2.4rem;
@@ -34,7 +29,7 @@
     color: #333;
   }
   &__attributes {
-    margin-top: 6.4rem;
+    margin: 4.8rem 0 3.2rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -45,18 +40,24 @@
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    span {
+      color: #f3d9fa;
+    }
     strong {
       font-weight: 500;
+      color: var(--color-white);
     }
   }
   &__icon {
     width: 2.4rem;
     height: 2.4rem;
-    color: #e67322;
+    color: var(--color-tertiary-dark);
+  }
+  &:hover {
+    transform: translateY(-1.2rem);
   }
 }
 .diet {
-  // color: $color-grey-light-1;
   &__lists {
     list-style: none;
     display: flex;
@@ -72,10 +73,13 @@
   &__icon {
     width: 3rem;
     height: 3rem;
-    color: #e67e22;
+    color: var(--color-tertiary-dark);
   }
 }
 
+/**************************/
+/* Recipes Tags */
+/**************************/
 .tag {
   display: inline-block;
   font-size: 1.2rem;

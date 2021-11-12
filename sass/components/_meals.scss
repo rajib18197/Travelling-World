@@ -1,32 +1,21 @@
 .section-meals {
   padding: 4rem 0;
 }
-.meals {
-  padding-top: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  padding-left: 1.2rem;
-  margin-top: 4rem;
-}
+
 .meal {
   display: flex;
-  width: 46%;
   margin-right: 4rem;
   &__details {
     margin-bottom: 4rem;
     display: flex;
-    // margin-right: 4rem;
   }
   &__img {
     display: block;
     width: 18rem;
     height: 18rem;
-    border: 0.6rem solid $color-grey-light-4;
+    border: 0.6rem solid var(--color-grey-light-4);
     border: 0.6rem solid #ff6331;
-    border: 0.6rem solid #730099;
+    border: 0.6rem solid #ffc9c9;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -58,9 +47,10 @@
   &__price {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
   }
   &__description {
     font-size: 1.6rem;
+    line-height: 1.6;
   }
 }

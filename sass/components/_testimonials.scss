@@ -1,62 +1,27 @@
-.section-testimonials {
-  display: grid;
-  grid-template-columns: 55fr 45fr;
-  align-items: center;
-}
 .testimonials-container {
   padding: 9.6rem;
 }
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
 .testimonial {
-  // background-color: #182025;
-  background-color: #ec407a;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 3rem;
-  padding: 4rem;
-  transform: skewX(-12deg);
-  &__shape {
-    width: 10rem;
-    height: 10rem;
-    float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(12deg);
-    position: relative;
-  }
   &__img {
-    width: 100%;
-    height: auto;
+    width: 6.4rem;
     object-fit: cover;
-    transform: scale(1.3);
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: all 0.4s;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
   }
   &__text {
     font-size: 1.8rem;
-    transform: skewX(12deg);
-    // color: $color-grey-light-1;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
   }
   &__name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1.6rem;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    // color: $color-grey-light-1;
-    opacity: 0;
-    transition: all 0.4s;
-  }
-  &:hover &__name {
-    opacity: 1;
-  }
-  &:hover &__img {
-    transform: scale(1);
-    filter: blur(3px) brightness(80%);
+    color: #6f6f6f;
   }
 }
 .gallery {
@@ -66,9 +31,33 @@
   padding: 1.6rem;
   &__image {
     overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
     img {
       display: block;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgba(rgb(252, 195, 212), 0.6);
+    //   background-color: rgba(228, 29, 56, 0.6);
+    //   transform: scale(0);
+    //   opacity: 0;
+    //   transition: all 0.4s ease;
+    // }
+    &:hover {
+      filter: brightness(80%);
     }
   }
+  // &__image:hover::before {
+  //   opacity: 1;
+  //   transform: scale(1);
+  // }
 }

@@ -1,11 +1,28 @@
-.section-about {
-  background-color: #fdf2e9;
+.section-hero {
+  background-color: var(--color-grey-light-4);
   padding: 4.8rem 0 9.6rem 0;
 }
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+  background-color: var(--color-primary);
+}
+
 .section-how {
   padding: 9.6rem 0;
 }
+
+.section-recipes {
+  padding: 9.6rem 0;
+}
+
 .section-features {
   padding: 10rem;
   background-color: #730039;
+}
+.section-testimonials {
+  background-color: var(--color-grey-light-4);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
