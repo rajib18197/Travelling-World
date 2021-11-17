@@ -1,33 +1,53 @@
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.8rem;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-family: inherit;
-  transition: all 0.3s;
-  position: relative;
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &--full:link,
+  &--full:visited {
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
+  }
+
+  &--outline:link,
+  &--outline:visited {
+    background-color: var(--color-grey-light-1);
+    color: #555;
+  }
+
+  &--round:link,
+  &--round:visited {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--color-tertiary-dark);
+    color: var(--color-grey-dark-1);
+  }
 }
-.btn--full:link,
-.btn--full:visited {
-  background-color: var(--color-primary);
-  color: var(--color-grey-light-1);
-}
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: var(--color-grey-light-1);
-  color: #555;
-}
+
 .btn--primary {
   background: #e73827;
   color: #fff;
 }
+
 .btn-secondary {
   padding: 0.9rem 5rem;
   text-transform: uppercase;

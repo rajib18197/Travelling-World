@@ -6,3 +6,5 @@
 4.Reusable components for your other different (projects or in this current projects) and also for other Developers who might take on your project in the Future.
 5.Modular(standalone Components meaning don't have any Connections with other components on the page) Building Blocks Components. 
 6.Independent Components, Allowing us to use them anywhere on the page.
+
+/* reusable grid এর সাথে কি container class add হবে, container class reusable grid এর আগের line এ রাখবো?  */

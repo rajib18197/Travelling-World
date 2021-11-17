@@ -1,56 +1,104 @@
-.section-meals {
-  padding: 4rem 0;
-}
-
 .meal {
-  display: flex;
-  margin-right: 4rem;
-  &__details {
-    margin-bottom: 4rem;
-    display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  column-gap: 2rem;
+  padding: 2rem;
+  background-color: #101d28;
+  color: #f3d9fa;
+  border-radius: 0.2rem;
+
+  &__image-box {
+    grid-row: 1 / span 2;
   }
+
   &__img {
     display: block;
     width: 18rem;
     height: 18rem;
-    border: 0.6rem solid var(--color-grey-light-4);
-    border: 0.6rem solid #ff6331;
-    border: 0.6rem solid #ffc9c9;
-    border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    border: 0.6rem solid #ffc9c9;
+    border-radius: 50%;
     transition: all 0.3s ease-in-out;
   }
+
   &__image-box:hover &__img {
-    transform: scale(1.14) translateY(-0.5rem);
     transform: scale(1.15);
   }
-  &__details:hover &__content-box:not(:hover) {
-    transform: scale(0.9) translateY(0);
+
+  &__image-box:hover + &__info:not(:hover) {
+    transform: scale(0.9);
   }
 
-  &__content-box {
-    border-radius: 1rem;
+  &__image-box:hover ~ &__btn:not(:hover) {
+    transform: scale(0.8);
+  }
+
+  &__info {
+    grid-row: 1 / 3;
+    grid-column: 2 / -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1.5rem;
     backface-visibility: hidden;
     transition: all 0.3s;
+    z-index: 90;
   }
+
   &__title {
     font-size: 1.7rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0.9rem;
   }
-  &__price {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-top: 0.6rem;
-  }
+
   &__description {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+  }
+
+  &__stats-box {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  &__stat {
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__stat-value,
+  &__stat-name {
+    display: block;
+    width: max-content;
+  }
+
+  &__stat-value {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  &__stat-name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    &--1 {
+      color: var(--color-tertiary-dark);
+    }
+    &--2 {
+      color: var(--color-tertiary-light);
+    }
+  }
+
+  &__btn {
+    grid-column: 2 / -1;
+    grid-row: 1 / 3;
+    place-self: end;
+    margin: 1.6rem;
+    z-index: 100;
   }
 }

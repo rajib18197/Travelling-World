@@ -60,6 +60,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <!--+-+-+-+-+- Hero Section +-+-+-+-+--->
       <section class="section-hero">
@@ -68,20 +69,19 @@
             <h1 class="heading-primary">
               A healthy meal delivered to your door, every single day
             </h1>
-            <p class="hero__description text-gray">
+            <p class="hero__description">
               The smart 365-days-per-year food subscription that will make you
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <div class="hero__btn">
-              <a href="#" class="btn btn--full margin-right-small"
-                >Start eating well</a
-              >
-              <a href="#" class="btn btn--outline">Learn More &rarr;</a>
-            </div>
+            <!-- <div class="hero__btn"> -->
+            <a href="#" class="btn btn--full margin-right-small"
+              >Start eating well</a
+            >
+            <a href="#" class="btn btn--outline">Learn More &rarr;</a>
+            <!-- </div> -->
             <div class="hero__delivered-meals">
               <div class="hero__delivered-imgs">
-                <!-- img[src=images/food-menu$.jpg]*6 [vs code emmet] -->
                 <img src="images/food-menu1.jpg" alt="" />
                 <img src="images/food-menu2.jpg" alt="" />
                 <img src="images/food-menu3.jpg" alt="" />
@@ -94,6 +94,7 @@
               </p>
             </div>
           </div>
+
           <div class="hero__image-box">
             <img src="images/hero.webp" alt="" class="hero__img" />
           </div>
@@ -208,7 +209,7 @@
           </h2>
         </div>
         <!-- Recipes -->
-        <div class="container recipes grid grid--3-cols margin-bottom-large">
+        <div class="container grid grid--3-cols margin-bottom-large">
           <!-- Recipe 01 -->
           <div class="recipe">
             <img src="images/food-menu6.jpg" alt="" class="recipe__img" />
@@ -514,102 +515,177 @@
         </div>
 
         <!-- Meals -->
-        <div class="container meals grid grid--2-cols">
+        <div class="container grid grid--2-cols">
           <!-- Meal 01 -->
           <div class="meal">
-            <div class="meal__details">
-              <div class="meal__image-box">
-                <img src="images/food-menu.jpg" alt="" class="meal__img" />
-              </div>
-              <div class="meal__content-box">
+            <div class="meal__image-box">
+              <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+            </div>
+            <div class="meal__info">
+              <div class="meal__details">
                 <h3 class="meal__title">Pizza Bowl</h3>
                 <p class="meal__description">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually.
                 </p>
-                <p class="meal__price">Price:$250</p>
+              </div>
+              <div class="meal__stats-box">
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4.9</span>
+                  <span class="meal__stat-name meal__stat-name--1">Stars</span>
+                </div>
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4</span>
+                  <span class="meal__stat-name meal__stat-name--2"
+                    >Peoples</span
+                  >
+                </div>
               </div>
             </div>
+            <a href="#" class="meal__btn btn btn--round">Eat!</a>
           </div>
           <!-- Meal 02 -->
           <div class="meal">
-            <div class="meal__details">
-              <div class="meal__image-box">
-                <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-              </div>
-              <div class="meal__content-box">
+            <div class="meal__image-box">
+              <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+            </div>
+            <div class="meal__info">
+              <div class="meal__details">
                 <h3 class="meal__title">Pizza Bowl</h3>
                 <p class="meal__description">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually.
                 </p>
-                <p class="meal__price">Price:$250</p>
+              </div>
+              <div class="meal__stats-box">
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4.9</span>
+                  <span class="meal__stat-name meal__stat-name--1">Stars</span>
+                </div>
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4</span>
+                  <span class="meal__stat-name meal__stat-name--2"
+                    >Peoples</span
+                  >
+                </div>
               </div>
             </div>
+            <a href="#" class="meal__btn btn btn--round">Eat!</a>
           </div>
           <!-- Meal 03 -->
           <div class="meal">
-            <div class="meal__details">
-              <div class="meal__image-box">
-                <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-              </div>
-              <div class="meal__content-box">
+            <div class="meal__image-box">
+              <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+            </div>
+            <div class="meal__info">
+              <div class="meal__details">
+                <!-- <div class="meal__content-box"> -->
                 <h3 class="meal__title">Pizza Bowl</h3>
                 <p class="meal__description">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually.
                 </p>
-                <p class="meal__price">Price:$250</p>
+              </div>
+              <div class="meal__stats-box">
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4.9</span>
+                  <span class="meal__stat-name meal__stat-name--1">Stars</span>
+                </div>
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4</span>
+                  <span class="meal__stat-name meal__stat-name--2"
+                    >Peoples</span
+                  >
+                </div>
               </div>
             </div>
+            <a href="#" class="meal__btn btn btn--round">Eat!</a>
           </div>
           <!-- Meal 04 -->
           <div class="meal">
-            <div class="meal__details">
-              <div class="meal__image-box">
-                <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-              </div>
-              <div class="meal__content-box">
+            <div class="meal__image-box">
+              <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+            </div>
+            <div class="meal__info">
+              <div class="meal__details">
                 <h3 class="meal__title">Pizza Bowl</h3>
                 <p class="meal__description">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually.
                 </p>
-                <p class="meal__price">Price:$250</p>
+              </div>
+              <div class="meal__stats-box">
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4.9</span>
+                  <span class="meal__stat-name meal__stat-name--1">Stars</span>
+                </div>
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4</span>
+                  <span class="meal__stat-name meal__stat-name--2"
+                    >Peoples</span
+                  >
+                </div>
               </div>
             </div>
+            <a href="#" class="meal__btn btn btn--round">Eat!</a>
           </div>
           <!-- Meal 05 -->
           <div class="meal">
-            <div class="meal__details">
-              <div class="meal__image-box">
-                <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-              </div>
-              <div class="meal__content-box">
+            <div class="meal__image-box">
+              <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+            </div>
+            <div class="meal__info">
+              <div class="meal__details">
+                <!-- <div class="meal__content-box"> -->
                 <h3 class="meal__title">Pizza Bowl</h3>
                 <p class="meal__description">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually.
                 </p>
-                <p class="meal__price">Price:$250</p>
+              </div>
+              <div class="meal__stats-box">
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4.9</span>
+                  <span class="meal__stat-name meal__stat-name--1">Stars</span>
+                </div>
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4</span>
+                  <span class="meal__stat-name meal__stat-name--2"
+                    >Peoples</span
+                  >
+                </div>
               </div>
             </div>
+            <a href="#" class="meal__btn btn btn--round">Eat!</a>
           </div>
           <!-- Meal 06 -->
           <div class="meal">
-            <div class="meal__details">
-              <div class="meal__image-box">
-                <img src="images/food-menu1.jpg" alt="" class="meal__img" />
-              </div>
-              <div class="meal__content-box">
+            <div class="meal__image-box">
+              <img src="images/food-menu1.jpg" alt="" class="meal__img" />
+            </div>
+            <div class="meal__info">
+              <div class="meal__details">
+                <!-- <div class="meal__content-box"> -->
                 <h3 class="meal__title">Pizza Bowl</h3>
                 <p class="meal__description">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually.
                 </p>
-                <p class="meal__price">Price:$250</p>
+              </div>
+              <div class="meal__stats-box">
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4.9</span>
+                  <span class="meal__stat-name meal__stat-name--1">Stars</span>
+                </div>
+                <div class="meal__stat">
+                  <span class="meal__stat-value">4</span>
+                  <span class="meal__stat-name meal__stat-name--2"
+                    >Peoples</span
+                  >
+                </div>
               </div>
             </div>
+            <a href="#" class="meal__btn btn btn--round">Eat!</a>
           </div>
         </div>
       </section>
@@ -754,6 +830,7 @@
         </div>
       </section>
     </main>
+
     <!--+-+-+-+-+- Footer Section +-+-+-+-+--->
     <footer class="footer bg-dark">
       <div class="icons">

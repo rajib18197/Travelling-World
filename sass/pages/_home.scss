@@ -1,3 +1,7 @@
+/*************************/
+/* Home page  */
+/*************************/
+
 .section-hero {
   background-color: var(--color-grey-light-4);
   padding: 4.8rem 0 9.6rem 0;
@@ -16,10 +20,15 @@
   padding: 9.6rem 0;
 }
 
+.section-meals {
+  padding: 9.6rem 0;
+}
+
 .section-features {
   padding: 10rem;
   background-color: #730039;
 }
+
 .section-testimonials {
   background-color: var(--color-grey-light-4);
   display: grid;
