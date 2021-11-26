@@ -1,9 +1,6 @@
 /************************************
  Pricing Card
 ************************************/
-.pricing {
-  padding: 10rem 0;
-}
 .pricing-board {
   column-gap: 2rem !important;
 }
@@ -100,4 +97,10 @@
     background-color: #cf711f;
     color: #fff;
   }
+}
+
+.plan-details {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: center;
 }

@@ -38,8 +38,19 @@
     width: 5rem;
     padding: 0.4rem;
     border-radius: 50%;
-    background-color: var(--color-tertiary-dark);
+    background-color: var(--color-grey-dark-4);
     color: var(--color-grey-dark-1);
+    color: white;
+  }
+  &--sign-up {
+    background-color: #45260a;
+    color: white;
+    padding: 1.2rem;
+    align-self: end;
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-grey-dark-1);
+    }
   }
 }
 

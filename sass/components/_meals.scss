@@ -5,7 +5,9 @@
   column-gap: 2rem;
   padding: 2rem;
   background-color: #101d28;
+  background-color: #eebafe;
   color: #f3d9fa;
+  color: #333;
   border-radius: 0.2rem;
 
   &__image-box {
@@ -47,10 +49,19 @@
   }
 
   &__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0.9rem;
+    // background-image: linear-gradient(
+    //   to right,
+    //   var(--color-gradient),
+    //   var(--color-gradient-to),
+    //   rgba(74, 212, 128, 0)
+    // );
+    // -webkit-background-clip: text;
+    // background-clip: text;
+    // color: transparent;
   }
 
   &__description {

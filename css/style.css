@@ -33,7 +33,9 @@
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --color-grey-dark-4: #101d30; }
+  --color-grey-dark-4: #101d30;
+  --color-gradient: #4ade80;
+  --color-gradient-to: #3b86f6; }
 
 /************************/
 /* Basic Reset */
@@ -77,12 +79,20 @@ li {
 .heading-secondary {
   font-size: 4.2rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem; }
+  margin-bottom: 9.6rem;
+  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient-to), rgba(74, 212, 128, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
 
 .heading-tertiary {
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem; }
+  margin-bottom: 3.2rem;
+  background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient-to), rgba(74, 212, 128, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
 
 .heading-featured-in {
   font-size: 2rem;
@@ -115,6 +125,9 @@ li {
 
 .margin-bottom-large {
   margin-bottom: 4.8rem !important; }
+
+.margin-bottom-small {
+  margin-bottom: 3.2rem !important; }
 
 /* Overall Page Container Width */
 .container {
@@ -153,8 +166,18 @@ li {
   width: 5rem;
   padding: 0.4rem;
   border-radius: 50%;
-  background-color: var(--color-tertiary-dark);
-  color: var(--color-grey-dark-1); }
+  background-color: var(--color-grey-dark-4);
+  color: var(--color-grey-dark-1);
+  color: white; }
+
+.btn--sign-up {
+  background-color: #45260a;
+  color: white;
+  padding: 1.2rem;
+  align-self: end; }
+  .btn--sign-up:hover {
+    background-color: var(--color-white);
+    color: var(--color-grey-dark-1); }
 
 .btn--primary {
   background: #e73827;
@@ -253,6 +276,30 @@ li {
       opacity: 50%;
       object-fit: cover; }
 
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  color: var(--color-white); }
+  .form__label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem; }
+  .form__input, .form__select {
+    font-size: 1.8rem;
+    font-family: inherit;
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    .form__input:focus, .form__select:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); }
+
 /***********************************/
 /* How It Works (Features Steps) */
 /***********************************/
@@ -301,7 +348,9 @@ li {
   column-gap: 2rem;
   padding: 2rem;
   background-color: #101d28;
+  background-color: #eebafe;
   color: #f3d9fa;
+  color: #333;
   border-radius: 0.2rem; }
   .meal__image-box {
     grid-row: 1 / span 2; }
@@ -330,7 +379,7 @@ li {
     transition: all 0.3s;
     z-index: 90; }
   .meal__title {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0.9rem; }
@@ -370,9 +419,6 @@ li {
 /************************************
  Pricing Card
 ************************************/
-.pricing {
-  padding: 10rem 0; }
-
 .pricing-board {
   column-gap: 2rem !important; }
 
@@ -464,6 +510,11 @@ li {
   padding: 1rem 3.5rem;
   background-color: #cf711f;
   color: #fff; }
+
+.plan-details {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: center; }
 
 /**************************/
 /* Food Recipes & Diets */
@@ -720,6 +771,9 @@ li {
 .section-meals {
   padding: 9.6rem 0; }
 
+.section-pricing {
+  padding: 10rem 0; }
+
 .section-features {
   padding: 10rem;
   background-color: #730039; }
@@ -729,3 +783,25 @@ li {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center; }
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem; }
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
+  background: #101d48;
+  overflow: hidden; }
+  .cta__form {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem; }
+  .cta__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: white; }
+  .cta__img {
+    background-image: url(../images/food-menu1.jpg);
+    background-size: cover;
+    background-position: center; }
